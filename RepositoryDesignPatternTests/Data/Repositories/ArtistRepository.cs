@@ -4,7 +4,7 @@ using RepositoryDesignPatternTests.Models;
 using RestSharp;
 using System.Collections.Generic;
 
-public class ArtistRepository : HttpRepository<Artist, List<Artist>>
+public class ArtistRepository : HttpRepository<Artist>
 {
     public ArtistRepository(string baseUrl)
         : base(baseUrl, "artists")

@@ -12,10 +12,10 @@ public class ArtistRepository
         this.client = new RestClient(baseUrl);
     }
 
-    public List<Customer> GetAll()
+    public List<Artist> GetAll()
     {
         var request = new RestRequest(entityEndpoint, Method.Get);
-        var response = client.Execute<List<Customer>>(request);
+        var response = client.Execute<List<Artist>>(request);
 
         if (!response.IsSuccessful)
         {
@@ -25,10 +25,10 @@ public class ArtistRepository
         return response.Data;
     }
 
-    public Customer GetById(int id)
+    public Artist GetById(int id)
     {
         var request = new RestRequest($"{entityEndpoint}/{id}", Method.Get);
-        var response = client.Execute<Customer>(request);
+        var response = client.Execute<Artist>(request);
 
         if (!response.IsSuccessful)
         {

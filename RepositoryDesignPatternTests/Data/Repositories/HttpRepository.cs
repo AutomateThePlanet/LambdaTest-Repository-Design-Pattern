@@ -3,7 +3,7 @@
 namespace RepositoryDesignPatternTests.Data.Repositories;
 
 
-public abstract class HttpRepository<TEntity, TEntities> where TEntity : new()
+public abstract class HttpRepository<TEntity> where TEntity : new()
 {
     protected RestClient client;
     protected string entityEndpoint;

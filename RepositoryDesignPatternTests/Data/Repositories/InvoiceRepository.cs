@@ -2,7 +2,7 @@
 using RestSharp;
 
 namespace RepositoryDesignPatternTests.Data.Repositories;
-public class InvoiceRepository : HttpRepository<Invoice, List<Invoice>>
+public class InvoiceRepository : HttpRepository<Invoice>
 {
     public InvoiceRepository(string baseUrl)
         : base(baseUrl, "invoices")

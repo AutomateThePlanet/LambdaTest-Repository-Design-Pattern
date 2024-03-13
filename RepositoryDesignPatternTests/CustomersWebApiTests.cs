@@ -78,7 +78,7 @@ public class CustomersWebApiTests
         var customer2 = _customerRepository.Create(CustomerFactory.GenerateCustomer(lastName: "Smith", email: "example@example.com"));
 
         // Act
-        var results = _customerRepository.Search("LastName:Doe OR LastName:Smith");
+        var results = _customerRepository.Search("LastName:Doe;OR;LastName:Smith");
 
         // Assert
         Assert.IsTrue(results.Count >= 2); // Assuming these are the only Doe or Smith in DB
