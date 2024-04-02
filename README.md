@@ -41,8 +41,8 @@ To execute tests on LambdaTest, you need to set up environment variables in your
 Test results are available in the `Test Explorer` window, providing information on passed and failed tests, execution times, and detailed error messages.
 
 
-### 🎓 Selenium Java Learning Hub
-[Selenium Java Learning Hub](https://www.lambdatest.com/learning-hub/selenium-c-sharp-tutorial)
+### 🎓 Selenium C# Learning Hub
+[Selenium C# Learning Hub](https://www.lambdatest.com/learning-hub/selenium-c-sharp-tutorial)
 
 
 ### Related Blogs 📝
